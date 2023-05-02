@@ -33,7 +33,7 @@ const handleSubmit = (e) => {
                 body: form
             })
             .then(action =>{
-                result.innerHTML="<div style='padding: 25px;text-align:center;'>Sorry we cannot process this request at this time, try again shortly or <a href='/index.html'>Go Back</a></div>";
+                result.innerHTML="<div style='padding: 25px;text-align:center;'>Incorrect password <a href='/index.html'>Go Back</a></div>";
                 loader.style.display = "none";
             })
             .catch(err=>console.log("Error: ", err));
